@@ -1,0 +1,42 @@
+<% layout('/layouts/boilerplate') %>
+
+    <div class="row">
+        <h1 class="text-center">New Place</h1>
+        <div class="col-6 offset-3">
+            <form action="/parks" method="POST" novalidate class="validated-form" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label class="form-label" for="title">Enter Title:</label>
+                    <input class="form-control" type="text" name="park[title]" id="title" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="location">Location:</label>
+                    <input type="text" class="form-control" name="park[location]" id="location" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" for="price">Ticket price:</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="price-label">$</span>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" id="price"
+                            name="park[price]" required>
+                        <span class="input-group-text">.00</span>
+                    </div>
+                </div>
+                <input type="file" name="image" id="" multiple>
+                <!-- <div class="mb-3">
+                    <label class="form-label" for="image">Park image Url:</label>
+                    <input type="text" class="form-control" name="park[image]" id="image" required>
+                </div>
+                 -->
+                <div class="mb-3">
+                    <label class="form-label" for="description">Description:</label>
+                    <textarea class="form-control" type="text" name="park[description]" id="description" rows="5"
+                        required></textarea>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-success">Add new place</button>
+                </div>
+            </form>
+        </div>
+    </div>
