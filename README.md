@@ -4,4 +4,4 @@ DestinationNext is a web application for people to plan and discover their next 
 
 This project is built with JavaScript(Node.js), HTML5/CSS, and MongoDB.
 
-Please try the live demo [here](https://quiet-reef-47491.herokuapp.com/)
+Please try the live demo [here](https://enchanting-pea-coat-eel.cyclic.app/)
